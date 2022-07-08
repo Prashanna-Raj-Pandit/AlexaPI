@@ -1,5 +1,6 @@
-﻿**TABLE OF CONTENTS:**
+# AlexaPI
 
+TABLE OF CONTENTS
 - Acknowledgement
 - Introduction
 - Objectives
@@ -20,19 +21,19 @@
 - Indicate the device state with LEDs
 - Reboot Raspberry PI to AVS-device
 - Home Automation
-- Create an account in Sinric
-- Create smart home devices
-- Connect ESP-8266 with AlexaPI using API of Sinric
-- Discover devices by Raspberry PI(AlexaPi)
-- Connect devices by PI
-- Sample check
-- Total expenses
+  - Create an account in Sinric
+  - Create smart home devices
+  - Connect ESP-8266 with AlexaPI using API of Sinric
+  - Discover devices by Raspberry PI(AlexaPi)
+  - Connect devices by PI
+  - Sample check
 
 
 
 
 
-**Acknowledgement**
+
+## Acknowledgement
 
 In the present world of competition there is a race of existence where people have will to rise for success. Project is like a bridge between theoretical and practical working. With this willing we joined this project. First of all, we would like to thank the supreme power; the Almighty God who is obviously the one has always guided us to work on the right path of life. Without his grace this project couldn’t become a reality. Next to him are our parents, whom we are greatly indebted for our brought up with love and encouragement to this state. At last but not the least we are thankful to all our teachers and friends who have been always helping and encouraging us. We have no valuable words to express our thanks, but our heart is full of the favors received from every person.
 
@@ -59,7 +60,7 @@ Thank you!
 
 **Neha Dahal**
 
-**Introduction:**
+## Introduction:
 
 In this project, we are going to present how to make Alexa voice service device SDK from amazon. This can be made using the sample app that is included with the AVS device SDK from Amazon website.
 
@@ -69,15 +70,15 @@ Most devices with Alexa allow users to activate the device using a wake-word (su
 
 2019 Amazon launched many new devices achieving many records while competing with the world's smart home industry. Since this service is not available in our country, this project is built in the vision of providing service in home automation. This project uses raspberry PI as the major microcontroller which receives audio from USB microphone and sends to Audio Input Processor.
 
-**Objectives:**
+## Objectives:
 
 - To provide the service of voice interaction, music playback, making to-do list, setting alarm.
 - To provide weather, traffic, sports and real time information such as news.
 - To provide the service of home automation.
 
-**Functions**
+## Functions
 
-**AlexaPI** can perform a number of pre-set functions out-of-the-box such as set timers, share the current weather, create lists, access [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia "Wikipedia") articles, and many more things. Users say a designated "wake word" (the default is simply "Alexa") to alert an Alexa-enabled device of an ensuing function command. Alexa listens for the command and performs the appropriate function, or skill, to answer a question or command. When questions are asked, AlexaPI converts [sound](https://en.wikipedia.org/wiki/Sound "Sound") waves into text which allows it to gather information from various sources. Behind the scenes, the data gathered is then parsed by [Wolfram's](https://en.wikipedia.org/wiki/Wolfram_Research "Wolfram Research") technology to generate suitable and accurate answers.[\[26\]](https://en.wikipedia.org/wiki/Amazon_Alexa#cite_note-26) Alexa-supported devices can stream music from the owner's [Amazon Music](https://en.wikipedia.org/wiki/Amazon_Music "Amazon Music") accounts and have built-in support for [Pandora](https://en.wikipedia.org/wiki/Pandora_Radio "Pandora Radio") and [Spotify](https://en.wikipedia.org/wiki/Spotify "Spotify") accounts. AlexaPI can play music from streaming services such as [Apple Music](https://en.wikipedia.org/wiki/Apple_Music "Apple Music") and [Google Play Music](https://en.wikipedia.org/wiki/Google_Play_Music "Google Play Music") from a phone or tablet.
+**AlexaPI** can perform a number of pre-set functions out-of-the-box such as set timers, share the current weather, create lists, access [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia "Wikipedia") articles, and many more things. Users say a designated "wake word" (the default is simply "Alexa") to alert an Alexa-enabled device of an ensuing function command. AlexaPi listens for the command and performs the appropriate function, or skill, to answer a question or command. When questions are asked, AlexaPI converts [sound](https://en.wikipedia.org/wiki/Sound "Sound") waves into text which allows it to gather information from various sources. Behind the scenes, the data gathered is then parsed by [Wolfram's](https://en.wikipedia.org/wiki/Wolfram_Research "Wolfram Research") technology to generate suitable and accurate answers.
 
 In addition to performing pre-set functions, AlexaPI can also perform additional functions through third-party skills that users can enable. AlexaPI also favors in home automation. In this project AlexaPI is used to automate lights, cooling fans, doors and some normal home appliances sample. This can also be used to connect real home appliances.
 
@@ -85,27 +86,15 @@ Some of the major features are highlighted below:
 
 - **Home automation:**
 
-In the home automation space, AlexaPI can interact with devices from several manufacturers including [SNAS](https://www.snasiotlab.com/),Fibaro, [Belkin](https://en.wikipedia.org/wiki/Belkin_Wemo "Belkin Wemo"), [ecobee](https://en.wikipedia.org/wiki/Ecobee "Ecobee"),Geeni, [IFTTT](https://en.wikipedia.org/wiki/IFTTT "IFTTT"), [Insteon](https://en.wikipedia.org/wiki/Insteon "Insteon"), [LIFX](https://en.wikipedia.org/wiki/LIFX "LIFX"), [LightwaveRF](https://en.wikipedia.org/wiki/LightwaveRF "LightwaveRF"), [Nest](https://en.wikipedia.org/wiki/Nest_Labs#Nest_Learning_Thermostat "Nest Labs"), Wink, [Philips_Hue](https://en.wikipedia.org/wiki/Philips_Hue "Philips Hue"), [SmartThings](https://en.wikipedia.org/wiki/SmartThings "SmartThings"), and Yonomi. The Home Automation feature was launched on April 8, 2015. Developers are able to create their own smart home skills using the [Alexa Skills Kit](https://en.wikipedia.org/wiki/Alexa_Skills_Kit "Alexa Skills Kit").
+In the home automation space, AlexaPI can interact with several devices build and connected with ESP8266 module
 
-- **Ordering**
-
-Take-out food can be ordered using AlexaPI; food ordering using Alexa is supported by [Domino's Pizza](https://en.wikipedia.org/wiki/Domino%27s_Pizza "Domino's Pizza"), [Grubhub](https://en.wikipedia.org/wiki/Grubhub "Grubhub"), [Pizza Hut](https://en.wikipedia.org/wiki/Pizza_Hut "Pizza Hut"), [Seamless](https://en.wikipedia.org/wiki/Seamless_\(company\) "Seamless (company)"), and [Wingstop](https://en.wikipedia.org/wiki/Wingstop "Wingstop").
 
 - **Music**
 
-AlexaPI supports a multitude of subscription-based and free streaming services on Amazon devices. These streaming services include: Prime Music, Amazon Music, Amazon Music Unlimited, [Apple Music](https://en.wikipedia.org/wiki/Apple_Music "Apple Music"), [TuneIn](https://en.wikipedia.org/wiki/TuneIn "TuneIn"), [iHeartRadio](https://en.wikipedia.org/wiki/IHeartRadio "IHeartRadio"), Audible, [Pandora](https://en.wikipedia.org/wiki/Pandora_Radio "Pandora Radio"), and [Spotify](https://en.wikipedia.org/wiki/Spotify "Spotify") Premium. However, some of these music services are not available on other Alexa-enabled products that are manufactured by company’s external of its services.
+AlexaPI supports a multitude of subscription-based and free streaming services on Amazon devices. These streaming services include: Prime Music, Amazon Music, Amazon Music Unlimited.
 
-AlexaPI is able to stream media and music directly. To do this, Alexa's device should be linked to the Amazon account, which enables access to one's Amazon Music library, in addition to any audiobooks available in one's Audible library. Amazon Prime members have an additional ability to access stations, playlists, and over two million songs free of charge. Amazon Music Unlimited subscribers also have access to a list of millions of songs.
+AlexaPI is able to stream media and music directly. To do this, Alexa's device should be linked to the Amazon account, which enables access to one's Amazon Music library, in addition to any audiobooks available in one's Audible library. Amazon Prime members have an additional ability to access stations, playlists, and over two million songs free of charge.
 
-- **Sports**
-
-Amazon AlexaPI allows the user to hear updates on supported sports teams. A way to do this is by adding the sports team to the list created under Alexa's Sports Update app section. 
-
-- **Messaging and calls**
-
-There are a number of ways messages can be sent from Alexa's application. Alexa can deliver messages to a recipient's Alexa application, as well as to all supported Echo devices associated with their Amazon account. Alexa can send typed messages only from Alexa's app. If one sends a message from an associated Echo device, it transmits as a voice message. Alexa cannot send attachments such as videos and photos.
-
-For households with more than one member, one's Alexa contacts are pooled across all of the devices that are registered to its associated account. However, within Alexa's app one is only able to start conversations with its Alexa contacts. When accessed and supported by an Alexa app or Echo device, Alexa messaging is available to anyone in one's household. These messages can be heard by anyone with access in the household. This messaging feature does not yet contain a password protection or associated PIN. Anyone who has access to one's cell phone number is able to use this feature to contact them through their supported Alexa app or Echo device. The feature to block alerts for messages and calls is available temporarily by utilizing the Do Not Disturb feature.
 
 **Working Mechanism:**
 
@@ -122,7 +111,7 @@ Now the Activity Focus Manager Library or AFML is interesting because it changes
 
 ![](Aspose.Words.c641257d-6591-4497-85b2-55a5d2034c52.001.png)
 
-**Key SDK Components**
+## Key SDK Components
 
 **Audio Input Processor**
 
@@ -138,7 +127,7 @@ Handles Alexa-driven interactions; specifically, directives and events. Each cap
 #### **Activity Focus Manager Library (AFML)**
 Prioritizes the channel inputs and outputs as specified by the [AVS Interaction Model](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/interaction-model#channels).
 
-**Methodology (making of):**
+##Methodology (making of):
 
 **Prerequisites**
 
@@ -170,13 +159,13 @@ First we flash the raspian image file in the SD-card and thn insert the card n r
 
 The first step is to run apt-get update and apt-get upgrade. This ensures that your Pi has an updated and upgraded list of packages.
 
-cd /home/pi/
+*cd /home/pi/*
 
-sudo apt-get update
+*sudo apt-get update*
 
-sudo apt-get upgrade
+*sudo apt-get upgrade*
 
-**Build the AVS-device-SDK**
+## Build the AVS-device-SDK
 
 Next, we get the AVS Device SDK configuration scripts from the AVS SDK Github repo. These scripts contain all the logic to build the SDK with single command. When we run them, they download the AVS Device SDK and install any required dependencies. These scripts get updated with each SDK release and automatically download the latest SDK for us.
 
@@ -197,7 +186,7 @@ The **setup.sh** script builds the SDK and installs dependencies that allow ou
 
 To run the install script, open a terminal and run **setup.sh** using your **config.json** file and a device serial number (DSN) as arguments. If you get an error, make sure your config.json file is in the same folder as the setup.sh script.
 
-cd /home/pi/
+*cd /home/pi/*
 
 sudo bash setup.sh config.json [-s 1234]
 
@@ -209,9 +198,8 @@ Once the AVS-Device-sdk is installed, now we need to authorize the sample app. F
 
 In a terminal window, navigate to the /home/pi directory and run **startsample.sh**.
 
-cd /home/pi/
-
-sudo bash startsample.sh
+*cd /home/pi/*
+*sudo bash startsample.sh*
 
 Once the sample app starts, we'll see a series of rapidly scrolling debug messages in the terminal window stating, **Checking for authorization**. We need to Scroll through the debug messages and look for a box with a URL, it contains our Alexa authorization code.
 
@@ -233,9 +221,9 @@ we are now ready to use the sample app. The next time we start the sample app, w
 
 To re-launch the sample app, run the following command. It includes the path to our configuration file and the Sensory wake word model.
 
-cd /home/pi/
+*cd /home/pi/*
 
-sudo bash startsample.sh
+*sudo bash startsample.sh*
 
 **Indicate device state with sounds:**
 ### **Modify UImanager file**
@@ -245,7 +233,7 @@ Amazon provides a **library** of sound clips for us to use when designing our 
 
 First, we'll need to download the sound library. From [AVS Dashboard](https://developer.amazon.com/avs/home.html#/avs/home), clicking on our **Resources** tab next to **Analytics Dashboard** under Alexa Voice Service link.
 
-Scrolling down until we see the **Alexa Sound Library for AVS** box, clicking on the **View** box, then "Download" to get the library onto our Pi. Navigate to our /home/pi/Downloads folder in the file explorer, and right-click on the zipped archive and select **Extract Here**.
+Scrolling down until we see the **Alexa Sound Library for AVS** box, clicking on the **View** box, then "Download" to get the library onto our Pi. Navigate to our */home/pi/Downloads* folder in the file explorer, and right-click on the zipped archive and select **Extract Here**.
 
 Now, we have local copies of the key sounds we'll use to inform users of your product state. Opening the **"Key Sounds for AVS"** folder and coping the file **med\_ui\_wakesound.wav**. Pasting a copy of this sound into our */home/pi/sounds* folder - this is the path we'll point to later when we're ready to play the sound!
 
@@ -261,19 +249,19 @@ system("play /home/pi/sounds/med\_ui\_wakesound.wav");
 
 Don't forget to **save your text file** before closing it! If you get a "Save As…" dialog and are unable to save the file as the same name, we'll need to update ownership permissions. In the terminal, type the following and hit return:
 
-sudo chown -R pi:pi /home/pi
+*sudo chown -R pi:pi /home/pi*
 
 After successfully saving **UIManager.cpp** we'll need to **rebuild the Sample App** for the changes to take effect. First, quit out of your existing instance of the Sample App (if it's still running) by typing **q** in the terminal and hitting **return**. Still in the terminal window, input the following command to rebuild the Sample App:
 
-cd /home/pi/build/SampleApp
+*cd /home/pi/build/SampleApp*
 
-sudo make
+*sudo make*
 
 It'll take a minute to rebuild with the changes we made to UIManager.cpp. Once we get to 100%, restart your Sample App by initiating the **startsample.sh** script in a terminal:
 
-cd /home/pi/
+*cd /home/pi/*
 
-sudo bash startsample.sh
+*sudo bash startsample.sh*
 
 Every time we speak the wake word **"Alexa"** to our prototype (Alexa's state changes to **"Listening…"**) we should hear the **wake sound** play, indicating that our client device has opened a channel to the cloud. If we initiate a **multi-turn interaction**, we'll also hear the sound when Alexa is awaiting our answer. In the terminal window, we'll see the following message when our sound clip is successfully played.
 
@@ -314,15 +302,15 @@ Once you've increased the priority of the Content Channel, save your **FocusMan
 
 We'll need to **rebuild the sample app** for the changes to take effect. First, quit out of our existing instance of the Sample App (if it's still running) by closing the window, Ctrl-C'ing out, or the more elegant typing "**q**" and hitting **return**. Open a terminal and input the following command to rebuild the Sample App:
 
-cd /home/pi/build/SampleApp
+*cd /home/pi/build/SampleApp*
 
-sudo make
+*sudo make*
 
 You'll see the modified libraries rebuilding - it might take a couple of minutes. When you get the message that your target SampleApp is 100% built, it's time to **re-launch the Sample App** and try the same interaction. Restart the Sample App by running this command in a terminal:
 
-cd /home/pi
+*cd /home/pi*
 
-sudo bash startsample.sh
+*sudo bash startsample.sh*
 
 Now, **start a 20-second timer** again and ask Alexa for another song. This time, your song should keep playing even when your timer goes off. If you were building Alexa-enabled smart speakers for DJs, they might appreciate your device never interrupting a song.
 
@@ -356,11 +344,11 @@ We need to add the **WiringPi** library to the SampleApp project so that we ca
 
 We will also initialize the library using the function **“wiringPiSetup”** and set up the GPIOs we plan on using to drive our Red and Blue LEDs. The Pi makes a couple dozen pins available for use, but for now, let's reserve two output pins for our tutorial. Still in **main.cpp**, scroll down to the int main function and add the following code:
 
-wiringPiSetup () ;
+*wiringPiSetup () ;*
 
-pinMode (0, OUTPUT) ;
+*pinMode (0, OUTPUT) ;*
 
-pinMode (1, OUTPUT) ;
+*pinMode (1, OUTPUT) ;*
 
 **Save your text file** and close it. Still in the *home/pi/avs-device-sdk/SampleApp/src* folder, open the file “UIManager.cpp”. We need to include the WiringPi.h header file by adding #include <wiringPi.h> at the top of our file.
 
@@ -378,21 +366,21 @@ For the final step, we'll need to make a change to the CMake file in order for t
 ### **Rebuild the Sample app**
 Open a terminal and input the following command to rebuild the Sample App to implement the changes we just made:
 
-cd /home/pi/build/SampleApp
+*cd /home/pi/build/SampleApp*
 
-sudo make
+*sudo make*
 
 We'll also need to re-input our credentials after adding wiringPi to the CMake file. We can do this by re-doing the initial install step. This should only take 30 seconds, and won't require you to re-authenticate.
 
-cd /home/pi/
+*cd /home/pi/*
 
-sudo bash setup.sh config.json
+*sudo bash setup.sh config.json*
 
 then we restart Sample App by initiating the **startsample.sh** script in a terminal:
 
-cd /home/pi/
+*cd /home/pi/*
 
-sudo bash startsample.sh
+*sudo bash startsample.sh*
 
 Now, say **"Alexa"** - we should see the Blue LED light up to indicate when our device is in the **"Listening"** state. Now we toggle our device in and out of **Privacy Mode** by typing **"m"** and hitting "return" in our Sample App – our Red LED should indicate the state.The **AVS Device SDK** allows us to easily implement the Attention State system in hardware. 
 
